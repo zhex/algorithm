@@ -32,3 +32,9 @@ func TestShellSort(t *testing.T) {
 	ShellSort(data)
 	assert.EqualValues(t, data, sorted)
 }
+
+func TestMergeIntSortSort(t *testing.T) {
+	data := SortableIntArray(clone(arr))
+	MergeIntSort(data)
+	assert.EqualValues(t, data, sorted)
+}
