@@ -38,3 +38,9 @@ func TestMergeIntSortSort(t *testing.T) {
 	MergeIntSort(data)
 	assert.EqualValues(t, data, sorted)
 }
+
+func TestMergeBottomIntSortSort(t *testing.T) {
+	data := SortableIntArray(clone(arr))
+	MergeBottomIntSort(data)
+	assert.EqualValues(t, data, sorted)
+}
